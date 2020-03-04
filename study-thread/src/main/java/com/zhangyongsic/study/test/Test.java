@@ -1,5 +1,7 @@
 package com.zhangyongsic.study.test;
 
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * @program: study
  * @description:
@@ -48,6 +50,10 @@ public class Test {
     public static void main(String[] args) {
         System.out.println(test());
         System.out.println(getInt());
+
+        ConcurrentHashMap<String,String> concurrentHashMap = new ConcurrentHashMap<String, String>();
+        concurrentHashMap.put("zhangyong","zhangyong");
+
     }
 
 }
